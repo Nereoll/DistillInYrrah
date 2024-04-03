@@ -1,0 +1,43 @@
+html,body{font-family:Arial,Helvetica,sans-serif}
+a,p{font-size:larger}
+h1,h2{font-size:xx-large}
+main{
+    margin:auto;
+    padding:6em}
+#top{
+    text-align:center;
+}
+#btm{
+    margin-top:100px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+}
+#btm div{
+    flex:0 0 500px;
+}
+#btm li{list-style:none}
+#btm a{
+    color:black;
+    text-decoration:none}
+hr{
+    margin:0 5em;
+}
+#dateslist{
+    display:flex;
+    flex-flow:column nowrap;
+}
+#dateslist li{
+    padding:.6em 1.2em;
+    border-left:2px solid transparent;
+    list-style:none
+}
+#dateslist li:hover{
+    border-left:2px solid purple;
+}
+#dateslist li:hover a {
+    color:purple;
+}
+h2{
+    text-align: center;
+}
