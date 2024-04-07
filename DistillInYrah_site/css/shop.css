@@ -25,49 +25,37 @@ time, mark, audio, video {
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  justify-content: center;  
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-column-gap: 250px;
+  grid-row-gap: 50px;
 }
 
 article {
-    width: calc(50% - 30px);
-    padding-top: calc(50% - 20px);
-    margin: 10px;
-    position: relative;
-    border: solid 1px;
-    padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  margin: 30px;
 }
 
-article::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110%;
-  height: 50%;
-}
 
-article > * {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 .star {
-    width: 15px;
+    width: 20px;
 }
 
 h1 {
-    font-size: 3em;
+    
     padding-top: 30px;
     text-align: center;
     padding-bottom: 100px;
 }
 
 .product {
-    width: 70%;
+    width: 150%;
     padding-bottom: 30px;
 }
 
@@ -75,6 +63,3 @@ h2 {
     margin-top: 200px;
 }
 
-.star {
-    margin-top: 200%;
-}
