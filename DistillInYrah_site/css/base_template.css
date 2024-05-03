@@ -11,7 +11,7 @@ html{
     position: absolute;
     animation: rotateAnimation 20s linear infinite;
     -webkit-animation: rotateAnimation 20s linear infinite;
-    border : 1px solid black;
+
 }
   @keyframes rotateAnimation {
     from {
