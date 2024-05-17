@@ -25,7 +25,7 @@ time, mark, audio, video {
 }
 @font-face {
     font-family: 'skullsandcrossbones';
-    src: url('./fonts/skullsandcrossbones.woff') format('woff'),
+    src: url('../fonts/skullsandcrossbones.woff') format('woff'),
         url('./fonts/skullsandcrossbones.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
