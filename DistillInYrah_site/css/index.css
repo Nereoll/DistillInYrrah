@@ -39,18 +39,75 @@ time, mark, audio, video {
     display: flex;
     gap: 2em;
 }
-article{
-    display: grid;
-    justify-content: column;
-    align-items: center;
-}
+
 .home_bottle{
+    position: relative;
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: larger;
+    border-top: 6px solid black;
+}
+
+.logo_index{
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.text_container_index{
+    width: 33%;
+}
+.bottle_index{
+    position: relative;
+    padding: 100px 20px;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.bottle_index:hover{
+    background: rgba(0,0,0,0.5);
+    color: black;
+    transition: 0.5s;
+}
+.custom-btn-index{
+    position: absolute;
+    bottom: 10em;
+    border: 2px solid purple;
+    width: 170px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    background: transparent;
+    cursor: pointer;
+}
+.custom-btn-index:hover{
+    background: linear-gradient(0deg, pink 0%, #583058 100%);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.custom-btn-index>*{
+    color: purple;
+    text-decoration: none;
 }
 
 
@@ -80,8 +137,6 @@ article{
   .btn-1:hover {
   background: linear-gradient(0deg, #fcea9c 0%, #fcd29c 100%);
   }
-
-  
 /* 2 */
 .btn-2 {
     background: rgb(96,9,240);
@@ -95,8 +150,7 @@ article{
   }
   .btn-2:hover {
     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+                -4px -4px 6px 0 rgba(116, 125, 136, .5),
       inset -4px -4px 6px 0 rgba(255,255,255,.2),
       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-  }
-  
+}
