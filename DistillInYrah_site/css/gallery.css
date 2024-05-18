@@ -24,9 +24,9 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 @font-face {
-    font-family: 'skullsandcrossbones';
+    font-family: "skullsandcrossbones";
     src: url('../fonts/skullsandcrossbones.woff') format('woff'),
-        url('./fonts/skullsandcrossbones.ttf') format('truetype');
+        url('../fonts/skullsandcrossbones.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

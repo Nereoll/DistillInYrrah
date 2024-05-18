@@ -27,24 +27,18 @@ html{
 .navbar {
   z-index: 10;
     position: relative;
-    background-color: #552404;
+    background-image: url("../images/boat_plank.jpg");
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    text-align: center;
     padding: 20px 0px 20px 0px;
     width: 100%;
-    height: 10vh;
-    border-radius: 0px 0px 200px 200px / 0px 0px 75px 75px;
-    -webkit-border-radius: 0px 0px 200px 200px / 0px 0px 75px 75px;
-    -moz-border-radius: 0px 0px 200px 200px / 0px 0px 75px 75px;
-    -ms-border-radius: 0px 0px 200px 200px / 0px 0px 75px 75px;
-    -o-border-radius: 0px 0px 200px 200px / 0px 0px 75px 75px;
+
 }
 .navbar a {
     color: white;
+    font-weight: 700;
     text-decoration: none;
-    font-size: 1.5em;
-    margin: 0 1em;
 }
 #navbar-left {
         height: 100%;
