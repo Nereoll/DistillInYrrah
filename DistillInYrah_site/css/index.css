@@ -83,6 +83,8 @@ time, mark, audio, video {
     color: black;
     transition: 0.5s;
 }
+
+
 .custom-btn-index{
     position: absolute;
     bottom: 10em;
@@ -110,7 +112,6 @@ time, mark, audio, video {
     text-decoration: none;
 }
 
-
 .custom-btn {
     width: 130px;
     height: 40px;
@@ -128,6 +129,7 @@ time, mark, audio, video {
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
   }
+  
 
 /* 1 */
 .btn-1 {
@@ -137,20 +139,4 @@ time, mark, audio, video {
   .btn-1:hover {
   background: linear-gradient(0deg, #fcea9c 0%, #fcd29c 100%);
   }
-/* 2 */
-.btn-2 {
-    background: rgb(96,9,240);
-    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
-    border: none;
-    
-  }
-  .btn-2:before {
-    height: 0%;
-    width: 2px;
-  }
-  .btn-2:hover {
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .5),
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-}
+
