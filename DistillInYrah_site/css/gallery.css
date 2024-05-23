@@ -37,13 +37,30 @@ time, mark, audio, video {
 body {
     background-image: url('../images/treasure-map-background.png');
 }
-@font-face {
-    font-family: "skullsandcrossbones";
-    src: url('../fonts/skullsandcrossbones.woff') format('woff'),
-        url('../fonts/skullsandcrossbones.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #231B1B #E6D9C1;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #E6D9C1;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #231B1B;
+    border-radius: 20px;
+    border: 3px solid #E6D9C1;
+  }
+
+*::selection {
+    background-color: #231B1B;
+    color: #E6D9C1;
 }
 
 .main{
@@ -54,6 +71,7 @@ body {
     align-self: center;
     margin-top: 10em;
     font-family: "skullsandcrossbones";
+    user-select: text;
 }
 
 section {
@@ -66,7 +84,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 20em;
+    margin-bottom: 10em;
+    margin-left: 5%;
     z-index: 2;
 }
 
@@ -81,6 +101,8 @@ section {
 .section_vid {
     display: flex;
     justify-content: center;
+    margin-bottom: 10em;
+    margin-left: 5%;
 }
 
 .frame {
@@ -95,12 +117,23 @@ section {
     display : flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 10em;
+    gap: 15em;
     align-items: center;
     overflow-x: auto;
-    overflow-y: hidden;
     white-space: nowrap;
     margin-bottom: 10em;
+    margin-left: 10%;
+    width: 80%;
+    height: 30em;
+}
+
+.section_img img {
+    width: 60em;
+    height: 30em;
+}
+
+.pk-ca-marche-pas {
+    margin-left: 66em;
 }
 
 h1 {
@@ -112,11 +145,4 @@ h2 {
 
 .vid {
     width: 80%;
-}
-
-.image {
-    margin: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
