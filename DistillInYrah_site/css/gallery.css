@@ -22,6 +22,20 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: 'skullsandcrossbones', sans-serif;
+}
+
+@font-face {
+    font-family: 'skullsandcrossbones';
+    src: url('../fonts/skullsandcrossbones.woff2') format('woff2'),
+        url('../fonts/skullsandcrossbones.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-image: url('../images/treasure-map-background.png');
 }
 
 .main{
@@ -44,11 +58,28 @@ section {
     flex-direction: column;
     align-items: center;
     margin-top: 2em;
+    z-index: 2;
+}
+
+.ink-stain-1 {
+    position: absolute;
+    width: 10%;
+    margin-top: 40px;
+    margin-left: -60%;
+    z-index: 1;
 }
 
 .section_vid {
     display: flex;
     justify-content: center;
+}
+
+.frame {
+    position: absolute;
+    width: 80%;
+    height: 90%; 
+    margin-top: -25px;
+    margin-left: -35px;
 }
 
 .section_img {

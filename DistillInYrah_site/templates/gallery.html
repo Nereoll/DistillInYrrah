@@ -13,11 +13,13 @@
         <section class="section_titre">
             <h1>Breathtaking scenery</h1>
             <h2>For unforgettable moments</h2>
+            <img class="ink-stain-1" src="../images/ink-stain-1.png" alt="ink-stain">
 
         </section>
         <section class="section_vid">
-            <video controls class="vid">
-                <source src="../images/placeholder_gallery_video.mp4" type="video/mp4">
+            <img onclick="testVid()" class="frame" src="../images/frame-pirate.png" alt="frame">
+            <video controls class="vid" id="gallery-vid">
+                <source src="../images/gallery-cocktail-video.mp4" type="video/mp4">
             </video>
         </section>
         <section class="section_img">
@@ -39,5 +41,16 @@
     </main>
     <footer></footer>
     <script src="../js/template_script.js"></script>
+    <script>
+        let vid = document.getElementById("gallery-vid");
+
+        function testVid() {
+            if (vid.paused) {
+                vid.play();
+            } else {
+                vid.pause();
+            }
+        }
+    </script>
 </body>
 </html>
