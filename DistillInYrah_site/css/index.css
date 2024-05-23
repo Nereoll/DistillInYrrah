@@ -23,6 +23,20 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+@font-face {
+    font-family: 'skullsandcrossbones';
+    src: url('../fonts/skullsandcrossbones.woff2') format('woff2'),
+        url('../fonts/skullsandcrossbones.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-image: url('../images/treasure-map-background.png');
+}
+
 .header2{
     position: relative;
     width: 100%;
