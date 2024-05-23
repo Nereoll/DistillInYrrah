@@ -37,6 +37,14 @@ time, mark, audio, video {
 body {
     background-image: url('../images/treasure-map-background.png');
 }
+@font-face {
+    font-family: "skullsandcrossbones";
+    src: url('../fonts/skullsandcrossbones.woff') format('woff'),
+        url('../fonts/skullsandcrossbones.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 .main{
     display: flex;
@@ -45,6 +53,7 @@ body {
     gap: 10em;
     align-self: center;
     margin-top: 10em;
+    font-family: "skullsandcrossbones";
 }
 
 section {

@@ -32,6 +32,13 @@ main{
     padding:6em}
 #top{
     text-align:center;
+    padding-top: 80px;
+}
+.text_container{
+    width: 33%;
+    margin:auto;
+    padding-top: 20px;
+
 }
 #btm{
     margin-top:100px;
