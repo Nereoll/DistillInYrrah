@@ -34,6 +34,11 @@ time, mark, audio, video {
     font-display: swap;
 }
 
+*::selection {
+    background-color: #231B1B;
+    color: #E6D9C1;
+}
+
 body {
     background-image: url('../images/treasure-map-background.png');
 }
