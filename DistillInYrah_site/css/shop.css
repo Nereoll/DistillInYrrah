@@ -79,3 +79,10 @@ h2 {
 margin-top: 20px;
 }
 
+.bottle1 , .bottle2{
+    width: 300px;
+}
+
+.bottle3{
+    width: 225px;
+}
