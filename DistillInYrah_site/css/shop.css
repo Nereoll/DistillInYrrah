@@ -85,14 +85,19 @@ h2 {
 margin-top: 20px;
 }
 
+.bottle0 {
+    width: 190px;
+}
+
 .bottle1 {
     width: 270px;
 }
 
-.bottle3{
-    width: 225px;
-}
 
 .bottle2{
     width: 300px;
+}
+
+.bottle3{
+    width: 225px;
 }
