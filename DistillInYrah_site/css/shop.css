@@ -41,25 +41,28 @@ time, mark, audio, video {
 
 
 section {
-  justify-content: center;  
+  justify-content: center;
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-column-gap: 250px;
+  grid-template-columns: 500px 500px;
+  grid-column-gap: 100px;
   grid-row-gap: 50px;
 }
 
 article {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border-radius: 10px;
   align-items: center;
   margin: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 article:hover {
     background-color: #55240450;
     transition: 1s;
-}
+    }
 
 
 .star {
