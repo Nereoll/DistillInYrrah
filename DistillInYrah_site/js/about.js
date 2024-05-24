@@ -1,34 +1,21 @@
-function textValues(date){
-    let txt = "";
-    switch(date){
-        case 1800:
-            txt = "1";
-            break;
-        case 1805:
-            txt = "2";
-            break;
-        case 1806:
-            txt = "3";
-            break;
-        case 1810:
-            txt = "4";
-            break;
-        case 1870:
-            txt = "5";
-            break;
-        case 1905:
-            txt = "6";
-            break;
-        case 1940:
-            txt = "7";
-            break;
-        case 1980:
-            txt = "8";
-            break;
-        case 2005:
-            txt = "9";
-            break;
-        default: break;
-    }
-    document.getElementById("datestxt").innerHTML = txt;
+const values = {
+	1800: "Praesent vel nisi sed sapien euismod sagittis scelerisque non metus. Nullam suscipit, orci nec ornare aliquam, metus justo porta diam, non feugiat nunc ante ac lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque rhoncus scelerisque neque, sit amet dignissim justo aliquam et. Aliquam sed mauris quam. Mauris pellentesque lorem a ligula maximus facilisis. Nulla at nunc diam. ",
+	1805: "Quisque suscipit lectus sed suscipit rhoncus. Duis pretium erat eu fringilla rutrum. Aliquam sapien est, tempus in volutpat dictum, ultricies vestibulum nulla. Mauris ut est scelerisque, facilisis orci ut, pretium neque. Morbi varius ipsum erat, eu fermentum ligula venenatis vel. Sed a aliquam diam, vel blandit ligula. Nunc elementum pharetra nibh, quis posuere massa vestibulum quis. Vivamus congue posuere viverra. Nullam condimentum nibh consequat pellentesque molestie. Nunc mattis lacinia augue, sit amet bibendum erat vulputate a. Cras consequat risus sed tempus faucibus. ",
+	1806: "Duis ornare nulla ut diam ultricies, vitae consectetur urna iaculis. Etiam hendrerit est eu porttitor interdum. Phasellus viverra mi in est ullamcorper faucibus. Pellentesque non ligula eget nunc lobortis tempor ut vitae nunc. Etiam vehicula neque in iaculis semper. Quisque egestas arcu non dui ullamcorper, a scelerisque urna aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam consectetur diam urna, ut facilisis massa feugiat ac. Cras justo orci, fermentum sit amet massa quis, euismod bibendum diam. Quisque nunc sem, dapibus ut bibendum eu, euismod vitae odio. Aliquam nulla ipsum, fringilla ut malesuada iaculis, convallis in odio. ",
+	1810: "Nunc gravida, ipsum ac euismod iaculis, sapien erat molestie mi, eget lobortis elit est ac velit. Quisque sit amet erat dui. Suspendisse sit amet sapien vitae ex sodales pharetra porta vel ex. Nam nec dictum purus. Sed lorem neque, interdum posuere mi eget, porta vestibulum justo. Fusce luctus orci metus, pulvinar scelerisque neque feugiat vitae. Nunc consectetur eu massa vitae faucibus. Sed rhoncus consectetur elit, sit amet varius diam pellentesque nec. Proin ornare malesuada libero id bibendum. Vestibulum scelerisque mi in dignissim tincidunt. Integer et interdum dui. ",
+	1870: "Phasellus ac tincidunt mi, vitae sodales leo. Suspendisse rhoncus nisi libero, non malesuada urna posuere in. Nullam efficitur neque dolor, ac accumsan augue tincidunt id. Proin quis rutrum metus, eu dapibus ante. Maecenas sed felis ex. Nunc non lectus sit amet turpis efficitur molestie nec a turpis. Vivamus tristique mattis pharetra. Nulla elementum neque eu porttitor scelerisque. Nulla facilisi. Ut nec turpis et mauris tempor pretium quis non orci. ",
+	1905: "Aenean pharetra et tortor sit amet semper. Sed suscipit ex pulvinar purus luctus, ac feugiat eros laoreet. Morbi pulvinar lobortis bibendum. Nunc auctor sit amet erat at viverra. Vestibulum fringilla vulputate augue at maximus. Vivamus porta tempor dictum. Maecenas viverra efficitur dolor a malesuada. Sed interdum risus a nulla euismod, eu lacinia velit lacinia. Nunc eu suscipit lectus. Nullam ac nisi ac magna ultricies venenatis. Aliquam erat volutpat. Praesent rhoncus quam sapien. Nam tincidunt, orci et efficitur posuere, nunc velit egestas massa, nec dictum odio felis vitae ante. Nullam faucibus porta dolor, sed varius ex molestie at. ",
+	1940: "Sed et hendrerit orci. Quisque rhoncus nisi libero, ac varius mauris porttitor ac. Integer luctus sapien at erat luctus, ut luctus lorem convallis. Fusce congue accumsan fringilla. Praesent vel sem ipsum. Donec consectetur interdum consectetur. Suspendisse potenti. Nullam nec aliquet dui. Fusce in mauris ac odio dignissim congue non vitae nibh. Pellentesque elementum, purus eu tincidunt laoreet, dolor magna suscipit sapien, at dictum sapien felis at dolor. In vitae massa elit. Integer sed purus ac massa dignissim varius. ",
+	1980: "Phasellus enim tortor, molestie posuere pulvinar id, malesuada eget elit. Praesent lorem odio, auctor in ullamcorper bibendum, efficitur quis urna. Curabitur sit amet velit molestie, interdum nisi in, placerat magna. Aenean tempor, nunc in scelerisque congue, lacus urna suscipit elit, et maximus mi enim vel arcu. Pellentesque sodales egestas tellus, nec lacinia libero vestibulum sit amet. Pellentesque eu pretium turpis, non maximus lacus. Maecenas sed dictum odio. ",
+	2005: "Vestibulum blandit auctor nibh, ac mattis erat suscipit non. Cras ut mi in ex maximus sagittis in ac enim. Cras vehicula tristique magna, vitae finibus quam congue eget. Sed in rhoncus est. Nullam et nulla in erat vehicula dignissim a et metus. Integer tempor erat lobortis nisi dignissim egestas. Sed ultricies ac ipsum vel porttitor. Donec in fringilla velit, commodo sollicitudin magna. Nam maximus nibh eu ligula facilisis euismod. Integer ante dolor, gravida et mi et, faucibus porttitor ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum feugiat vestibulum. ",
+}
+
+const datelist = document.getElementsByClassName("datelist");
+for (let i = 0; i < datelist.length; i++) {
+	let date = datelist[i];
+    date.addEventListener('click', () => {
+		Object.values(datelist).forEach((d) => d.classList.remove("selected"));
+		date.classList.add("selected");
+		document.getElementById("datestxt").innerHTML = values[date.id];
+	});
 }

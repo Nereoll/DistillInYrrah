@@ -72,6 +72,9 @@ main{
 #btm a{
     color:black;
     text-decoration:none}
+#btm h2 {
+	margin-bottom: 20px;
+}
 hr{
     margin:0 5em;
 }
@@ -84,10 +87,13 @@ hr{
     border-left:2px solid transparent;
     list-style:none
 }
-#dateslist li:hover{
+#dateslist li:hover {
+	cursor: pointer;
+}
+#dateslist li.selected {
     border-left:2px solid purple;
 }
-#dateslist li:hover a {
+#dateslist li:hover span, #dateslist li.selected span {
     color:purple;
 }
 h2{

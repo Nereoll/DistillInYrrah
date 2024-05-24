@@ -38,30 +38,31 @@ time, mark, audio, video {
     color: #E6D9C1;
 }
 
-body {
-    background-image: url('../images/treasure-map-background.png');
-}
+
 
 section {
-  justify-content: center;  
+  justify-content: center;
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-column-gap: 250px;
+  grid-template-columns: 500px 500px;
+  grid-column-gap: 100px;
   grid-row-gap: 50px;
 }
 
 article {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border-radius: 10px;
   align-items: center;
-  margin: 30px;
+  margin: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 article:hover {
     background-color: #55240450;
     transition: 1s;
-}
+    }
 
 
 .star {
@@ -69,8 +70,8 @@ article:hover {
 }
 
 h1 {
-    font-size: 50px;
-    padding-top: 30px;
+    font-size: 3em;
+    padding-top: 150px;
     text-align: center;
     padding-bottom: 100px;
 }
@@ -84,7 +85,16 @@ h2 {
 margin-top: 20px;
 }
 
-.bottle1 , .bottle2{
+.bottle0 {
+    width: 190px;
+}
+
+.bottle1 {
+    width: 270px;
+}
+
+
+.bottle2{
     width: 300px;
 }
 
