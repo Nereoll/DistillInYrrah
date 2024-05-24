@@ -39,10 +39,6 @@ time, mark, audio, video {
     color: #E6D9C1;
 }
 
-body {
-    background-image: url('../images/treasure-map-background.png');
-}
-
 html,body{font-family:Arial,Helvetica,sans-serif}
 a,p{font-size:larger}
 h1,h2{font-size:xx-large}

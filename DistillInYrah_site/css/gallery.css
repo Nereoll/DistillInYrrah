@@ -34,9 +34,6 @@ time, mark, audio, video {
     font-display: swap;
 }
 
-body {
-    background-image: url('../images/treasure-map-background.png');
-}
 
 * {
     scrollbar-width: thin;
